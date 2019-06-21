@@ -1,0 +1,49 @@
+<ion-header>
+
+    <ion-toolbar class="menubar">
+        <!--<ion-grid >-->
+
+        <ion-row class="ion-justify-content-around ion-align-items-center">
+            <!-- Back button -->
+            <ion-col size="3">
+                <ion-buttons>
+                    <ion-back-button class="backButton" defaultHref=""></ion-back-button>
+                </ion-buttons>
+            </ion-col>
+            <!-- Back button -->
+
+            <!-- Title -->
+            <ion-col size="6" class="ion-justify-content-center" style="text-align: center">
+                <ion-icon size="large" name="paper-plane"></ion-icon>
+            </ion-col>
+            <ion-col size="3" style="text-align: center; font-size: 21px">
+
+            </ion-col>
+            <!-- Title -->
+        </ion-row>
+        <!--<ion-grid >-->
+
+    </ion-toolbar>
+
+    <!--    Subtitle -->
+    <ion-toolbar padding-start class="bottomBorder">
+        <ion-grid>
+            <ion-row>
+                <ion-col size="12">
+                    <ion-buttons class="ion-align-items-center ion-text-center ion-justify-content-around">
+                        <ion-button (click)="gotoAbout()">About me</ion-button>
+                        <ion-button (click)="gotoProjects()">Projects</ion-button>
+                        <ion-button (click)="gotoContact()">Contact me</ion-button>
+                    </ion-buttons>
+                </ion-col>
+            </ion-row>
+        </ion-grid>
+    </ion-toolbar>
+
+
+</ion-header>
+
+
+
+
+

@@ -1,0 +1,32 @@
+.menubar {
+  --color: #fff;
+  --background: linear-gradient(to right, #ff9472, #FF6C82, #f2709c);
+}
+
+button {
+  color: #ffffff;
+}
+
+.bottomBorder {
+  border-bottom: 1px;
+  border-bottom-color: #ebebeb;
+  border-bottom-style: solid;
+}
+
+.fontRed {
+  color: #FF6666;
+}
+
+.backButton {
+
+  --color: #ffffff;
+}
+
+ion-button {
+  background-color: transparent;
+  --background: transparent;
+  float: right;
+  --box-shadow: 0;
+  color: #FF6C82;
+  --background-hover: transparent;
+}
