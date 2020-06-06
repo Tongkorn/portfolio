@@ -1,18 +1,32 @@
 // http://ionicframework.com/docs/theming/
-@import '~@ionic/angular/css/core.css';
-@import '~@ionic/angular/css/normalize.css';
-@import '~@ionic/angular/css/structure.css';
-@import '~@ionic/angular/css/typography.css';
-@import '~@ionic/angular/css/display.css';
-@import '~@ionic/angular/css/padding.css';
-@import '~@ionic/angular/css/float-elements.css';
-@import '~@ionic/angular/css/text-alignment.css';
-@import '~@ionic/angular/css/text-transformation.css';
-@import '~@ionic/angular/css/flex-utils.css';
-@import url('https://fonts.googleapis.com/css?family=Prompt&display=swap');
-
+@import "~@ionic/angular/css/core.css";
+@import "~@ionic/angular/css/normalize.css";
+@import "~@ionic/angular/css/structure.css";
+@import "~@ionic/angular/css/typography.css";
+@import "~@ionic/angular/css/display.css";
+@import "~@ionic/angular/css/padding.css";
+@import "~@ionic/angular/css/float-elements.css";
+@import "~@ionic/angular/css/text-alignment.css";
+@import "~@ionic/angular/css/text-transformation.css";
+@import "~@ionic/angular/css/flex-utils.css";
+@import url("https://fonts.googleapis.com/css?family=Prompt&display=swap");
 
 * {
-  font-family: 'Prompt', sans-serif !important;
-  //border: 1px solid green;
+  // font-family: 'Prompt', sans-serif !important;
+  font-family: "Quicksand", sans-serif;
+  // font-family:  Display,Book Antiqua,Palatino,Palatino Linotype,Palatino LT STD,Georgia,serif;
+  font-size: 18px;
 }
+
+// body,
+// html {
+  // height: 100%;
+  // margin: 0;
+
+  // background: repeating-linear-gradient(to right, #8942a8, #ba382f) !important;
+  // height: 100%;
+  // background-position: center;
+  // background-repeat: no-repeat;
+  // background-size: cover;
+// }
+// 
