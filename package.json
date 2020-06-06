@@ -9,7 +9,8 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "gh-pages": "ng build --base-href 'https://tongkorn.github.io/portfolio/' --prod && npx ngh --dir=www/"
   },
   "private": true,
   "dependencies": {
@@ -44,6 +45,7 @@
     "@types/jasminewd2": "^2.0.8",
     "@types/node": "^12.0.12",
     "codelyzer": "~4.5.0",
+    "gh-pages": "^3.0.0",
     "jasmine-core": "~2.99.1",
     "jasmine-spec-reporter": "~4.2.1",
     "karma": "~4.1.0",

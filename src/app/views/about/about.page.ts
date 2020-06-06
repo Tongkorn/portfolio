@@ -13,9 +13,7 @@ export class AboutPage implements OnInit {
   }
 
   mailTo() {
-    console.log("111111");
-    var mail = document.createElement("a");
-    console.log("22222");
+    let mail = document.createElement("a");
     mail.href = "mailto:tongkorn.p@gmail.com?subject=files&body=Hi, Tongkorn";
     mail.click();
   }

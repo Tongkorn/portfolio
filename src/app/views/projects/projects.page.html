@@ -1,37 +1,104 @@
-
 <ion-content>
-<ion-card margin-top="200px">
-    <ion-card-content>
+    <div class="mb-5">
+        <app-header></app-header>
+    </div>
+    <ion-grid style="width: 90vw; margin-bottom: 30px">
+        <div class="mt-5 pt-3">
+            <h1 style="font-size: 2rem; font-weight: bolder; text-align: center;">
+                My works & Personal Projects
+            </h1>
+        </div>
         <ion-grid>
             <ion-row class="ion-justify-content-center">
-                <ion-col size="4" class="ion-align-items-center ion-text-center bigFont">
-                    Yo!
-                </ion-col>
-                <ion-col size="8" class="ion-align-items-center fontNormal">
-                    My First Coding project in life.
-                        From ZERO to something more.
-                    This is my 3-month CodeCamp project looks like.
-                    The project is about booking the room in University's dormitory.
+                <ion-card>
+                    <ion-card-content>
+                        <ion-card-title class="ion-text-center mt-3">
+                            Dormitory Booking App (prototype) - Ionic-Angular -
+                        </ion-card-title>
+                        <ion-row class="ion-align-items-center ion-text-center">
+                            <ion-col size="12" size-sm>
+                                <div>
+                                    <ion-button shape="round" fill="outline">Demo</ion-button>
+                                    <ion-button shape="round" fill="outline">Github</ion-button>
+                                </div>
+                            </ion-col>
+                        </ion-row>
+                        <ion-row class="ion-align-items-center ion-text-center">
+                            <ion-col size="12" size-sm>
+                                <div class="pr-0">
+                                    <ion-img src="../assets/screen.png" class="photo"></ion-img>
+                                </div>
+                            </ion-col>
+                            <ion-col size="12" size-sm>
+                                <div class="pl-0">
+                                    <ion-img src="../assets/phone-dormlist.png" class="photo"></ion-img>
+                                </div>
+                            </ion-col>
+                        </ion-row>
+                    </ion-card-content>
+                </ion-card>
+            </ion-row>
+            <ion-row class="ion-justify-content-center">
+                <ion-card>
+                    <ion-card-content>
+                        <ion-card-title class="ion-text-center mt-3">
+                            Admin Page | Retrieving data from Back-end API for CRUD operation
+                        </ion-card-title>
+                        <ion-row class="ion-align-items-center ion-text-center">
+                            <ion-col size="12" size-sm>
+                                <div>
+                                    <ion-button shape="round" fill="outline">Demo</ion-button>
+                                    <ion-button shape="round" fill="outline">Github</ion-button>
+                                </div>
+                            </ion-col>
+                        </ion-row>
+                        <ion-row class="ion-align-items-center ion-text-center">
+                            <ion-col size="12" size-sm>
+                                <div class="pr-0">
+                                    <ion-img src="../assets/admin.png" class="photo"></ion-img>
+                                </div>
+                            </ion-col>
+                        </ion-row>
+                    </ion-card-content>
+                </ion-card>
+            </ion-row>
+            <ion-row class="ion-justify-content-center">
+                <ion-card>
+                    <ion-card-content>
+                        <ion-card-title class="ion-text-center mt-3">
+                            Member Page, Registration Form | Using LINE api for Log in, using LINE messaging api (Liff)
+                        </ion-card-title>
+                        <ion-row class="ion-align-items-center ion-text-center">
+                            <ion-col size="12" size-sm>
+                                <div>
+                                    <ion-button shape="round" fill="outline">Demo</ion-button>
+                                    <ion-button shape="round" fill="outline">Github</ion-button>
+                                </div>
+                            </ion-col>
+                        </ion-row>
+                        <ion-row class="ion-align-items-center ion-text-center">
+                            <ion-col size="12" size-sm>
+                                <div class="pr-0">
+                                    <ion-img src="../assets/linelogin.png" class="photo"></ion-img>
+                                </div>
+                            </ion-col>
+                            <ion-col size="12" size-sm>
+                                <div class="pr-0">
+                                    <ion-img src="../assets/memberupdate.png" class="photo"></ion-img>
+                                </div>
+                            </ion-col>
+                        </ion-row>
 
-                </ion-col>
+                        <ion-row class="ion-align-items-center ion-text-center">
+                            <ion-col size="12" size-sm>
+                                <div class="pr-0">
+                                    <ion-img src="../assets/memberpage.png" class="photo"></ion-img>
+                                </div>
+                            </ion-col>
+                        </ion-row>
+                    </ion-card-content>
+                </ion-card>
             </ion-row>
         </ion-grid>
-    </ion-card-content>
-</ion-card>
-
-<ion-card>
-    <ion-card-content>
-        <ion-grid>
-            <ion-row class="ion-text-center">
-                <ion-col size="12">
-                    <ion-img class="photo" src="../../assets/screen.png"></ion-img>
-                </ion-col>
-                <ion-col size="12">
-                    <ion-img class="photo" src="../../assets/phone-dormlist.png"></ion-img>
-                </ion-col>
-            </ion-row>
-        </ion-grid>
-    </ion-card-content>
-</ion-card>
-
+    </ion-grid>
 </ion-content>

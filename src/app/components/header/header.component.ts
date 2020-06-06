@@ -21,8 +21,10 @@ export class HeaderComponent implements OnInit {
     this.router.navigateByUrl('/projects');
   }
 
-  gotoContact() {
-    this.router.navigateByUrl('/contact');
+  mailTo() {
+    let mail = document.createElement("a");
+    mail.href = "mailto:tongkorn.p@gmail.com?subject=files&body=Hi, Tongkorn";
+    mail.click();
   }
 
 }

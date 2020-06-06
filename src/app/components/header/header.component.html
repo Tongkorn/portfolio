@@ -1,7 +1,7 @@
 <ion-header>
-    <ion-toolbar class="menubar" style="position: fixed;">
-        <ion-row class="ion-justify-content-around ion-align-items-center;">
-            <ion-col col-12 col-xl-2 col-lg-3 col-md-4 size="6" class="ion-justify-content-center"
+    <ion-toolbar class="menubar" style=" display:block;position: fixed; height: 105px">
+        <ion-row class="ion-justify-content-around ion-align-items-center; mt-3">
+            <ion-col size="6" class="ion-justify-content-center"
                 style="text-align: center">
                 <ion-title>
                     <ion-icon size="large" name="paper-plane"></ion-icon>
@@ -15,8 +15,8 @@
                         About me</ion-button>
                     <ion-button style="font-weight: bolder; font-size: 1em ;" class="toolbar" (click)="gotoProjects()">
                         Projects</ion-button>
-                    <ion-button style="font-weight: bolder; font-size: 1em;" class="toolbar" (click)="gotoContact()">
-                        Contact</ion-button>
+                    <ion-button style="font-weight: bolder; font-size: 1em;" class="toolbar" (click)="mailTo()">
+                        <ion-icon size="normal" ios="ios-mail" md="md-mail" style="padding-right: 10px;"></ion-icon>contact</ion-button>
                 </ion-buttons>
             </ion-col>
         </ion-row>
