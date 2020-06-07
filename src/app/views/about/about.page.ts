@@ -12,10 +12,5 @@ export class AboutPage implements OnInit {
   ngOnInit() {
   }
 
-  mailTo() {
-    let mail = document.createElement("a");
-    mail.href = "mailto:tongkorn.p@gmail.com?subject=files&body=Hi, Tongkorn";
-    mail.click();
-  }
 
 }

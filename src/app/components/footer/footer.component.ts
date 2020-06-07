@@ -9,6 +9,12 @@ export class FooterComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit() {}
+  ngOnInit() { }
+  
+  mailTo() {
+    let mail = document.createElement("a");
+    mail.href = "mailto:tongkorn.p@gmail.com?subject=files&body=Hi, Tongkorn";
+    mail.click();
+  }
 
 }
