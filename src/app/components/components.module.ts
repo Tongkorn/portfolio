@@ -6,7 +6,7 @@ import {IonicModule} from '@ionic/angular';
 import {CardComponent} from './card/card.component';
 
 @NgModule({
-    declarations: [HeaderComponent, CardComponent,FooterComponent],
+    declarations: [HeaderComponent, CardComponent,FooterComponent,],
     imports: [
         CommonModule,
         IonicModule
@@ -14,7 +14,8 @@ import {CardComponent} from './card/card.component';
     exports: [
         HeaderComponent,
         CardComponent,
-        FooterComponent
+        FooterComponent,
+        
     ]
 })
 export class ComponentsModule {
