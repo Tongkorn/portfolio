@@ -9,23 +9,13 @@ import { ModalPage } from '../modal/modal.page'
   styleUrls: ['./projects.page.scss'],
 })
 export class ProjectsPage implements OnInit {
-  demo: Boolean = false;
-  imgDemo: Boolean = true;
-
   projectDemoValue: Number = 0;
 
   constructor(public modalController: ModalController) { }
 
   ngOnInit() {
-   }
+  }
 
-  // showDemo() {
-  //   this.demo = !this.demo;
-  //   this.imgDemo = !this.imgDemo;
-  //   console.log(this.demo);
-  //   console.log(this.imgDemo);
-  // }
-  
   async openModal(num: Number) {
     this.projectDemoValue = num;
     this.modalController.create({
@@ -37,6 +27,21 @@ export class ProjectsPage implements OnInit {
     }).then((modal) => {
       modal.present()
     })
+  }
+  goToGitlab(projectName) {
+
+    let linkName = document.createElement("a");
+
+    if (projectName === 'retailApp') {
+      linkName.href = "https://gitlab.com/tongkorn.p/retail-app";
+      linkName.click();
+    } else if (projectName === 'retailAdmin') {
+      linkName.href = "https://gitlab.com/tongkorn.p/retail-admin";
+      linkName.click();
+    } else if (projectName === 'dorm') {
+      linkName.href = "https://gitlab.com/passakornC/cc3_training";
+      linkName.click();
+    }
   }
 
 }

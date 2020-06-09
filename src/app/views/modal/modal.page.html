@@ -7,20 +7,24 @@
     </ion-toolbar>
   </ion-header>
   <ion-content>
-
-    <ion-list *ngIf="currentDemoModal === '2'" class="ion-justify-content-center ion-align-items-center">
-      <ion-item>
-        <img width="100%" src="../../../assets/projects-gif/admin-pc.gif" alt="">
+    <ion-list *ngIf="projectDemoValueProp === '1'" style="display:flex; justify-content: center;">
+      <ion-item style="width:50vh">
+        <img src="./assets/projects-gif/dormmobile.gif" alt="">
       </ion-item>
     </ion-list>
-    <ion-list *ngIf="currentDemoModal === '2.1'" class="ion-justify-content-center ion-align-items-center">
+    <ion-list *ngIf="projectDemoValueProp === '2'" class="ion-justify-content-center ion-align-items-center">
       <ion-item>
-        <img width="100%" src="../../../assets/projects-gif/admin-mobile.gif" alt="">
+        <img width="100%" src="./assets/projects-gif/admin-pc.gif" alt="">
       </ion-item>
     </ion-list>
-    <ion-list *ngIf="currentDemoModal === '3'" style="display:flex; justify-content: center;">
-      <ion-item style="width:50%" class="ion-justify-content-center">
-        <img src="../../../assets/projects-gif/membermobile.gif" alt="">
+    <ion-list *ngIf="projectDemoValueProp === '2.1'" class="ion-justify-content-center ion-align-items-center">
+      <ion-item>
+        <img width="100%" src="./assets/projects-gif/admin-mobile.gif" alt="">
+      </ion-item>
+    </ion-list>
+    <ion-list *ngIf="projectDemoValueProp === '3'" class="ion-justify-content-center ion-align-items-center">
+      <ion-item>
+        <img width="100%" src="./assets/projects-gif/memberpc.gif" alt="">
       </ion-item>
     </ion-list>
   </ion-content>

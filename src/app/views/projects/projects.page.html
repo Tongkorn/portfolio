@@ -31,7 +31,8 @@
                             <ion-col size="12" size-sm>
                                 <div>
                                     <ion-button shape="round" fill="outline" (click)="openModal('1')">Demo</ion-button>
-                                    <ion-button shape="round" fill="outline">Github</ion-button>
+                                    <ion-button shape="round" fill="outline" (click)="goToGitlab('dorm')">Gitlab
+                                    </ion-button>
                                 </div>
                             </ion-col>
                         </ion-row>
@@ -68,12 +69,14 @@
                         <ion-row class="ion-align-items-center ion-text-center">
                             <ion-col size="12" size-sm>
                                 <div>
-                                    <ion-button shape="round" fill="outline" (click)="openModal('2.1')">Demo</ion-button>
-                                    <ion-button shape="round" fill="outline">Github</ion-button>
+                                    <ion-button shape="round" fill="outline" (click)="openModal('2.1')">Demo
+                                    </ion-button>
+                                    <ion-button shape="round" fill="outline" (click)="goToGitlab('retailAdmin')">Gitlab
+                                    </ion-button>
                                 </div>
                             </ion-col>
                         </ion-row>
-                        <ion-row class="ion-align-items-center ion-text-center">
+                        <ion-row class=" ion-align-items-center ion-text-center">
                             <ion-col size="12" size-sm>
                                 <div class="pr-0">
                                     <ion-img src="./assets/admin.png"></ion-img>
@@ -101,7 +104,7 @@
                                 <ion-label>Javascript</ion-label>
                             </ion-chip>
                             <ion-chip>
-                                <ion-label>LINE Liff</ion-label>
+                                <ion-label>LINE LIFF</ion-label>
                             </ion-chip>
                             <ion-chip>
                                 <ion-label>LINE Login</ion-label>
@@ -111,19 +114,12 @@
                             <ion-col size="12" size-sm>
                                 <div>
                                     <ion-button shape="round" fill="outline" (click)="openModal('3')">Demo</ion-button>
-                                    <ion-button shape="round" fill="outline">Github</ion-button>
+                                    <ion-button shape="round" fill="outline" (click)="goToGitlab('retailApp')">Gitlab
+                                    </ion-button>
                                 </div>
                             </ion-col>
                         </ion-row>
-                        <ion-row *ngIf="demo">
-                            <ion-col size="12" size-sm>
-                                <div class="pr-0">
-                                    <video src="../../../assets/admin-page.mov"></video>
-                                </div>
-                            </ion-col>
-                        </ion-row>
-
-                        <ion-row *ngIf="!demo" class="ion-align-items-center ion-text-center">
+                        <ion-row class="ion-align-items-center ion-text-center">
                             <ion-col size="12" size-sm>
                                 <div class="pr-0">
                                     <ion-img src="./assets/linelogin.png"></ion-img>
@@ -133,15 +129,6 @@
                                 <div class="pr-0">
                                     <ion-img src="./assets/memberupdate.png"></ion-img>
                                 </div>
-                            </ion-col>
-                        </ion-row>
-
-                        <ion-row *ngIf="!demo" class="ion-align-items-center ion-text-center">
-                            <ion-col size="12" size-sm>
-                                <div class="pr-0">
-                                    <ion-img src="./assets/memberpage.png"></ion-img>
-                                </div>
-                                <video width="100%" src="../../../assets/admin-page.mov"></video>
                             </ion-col>
                         </ion-row>
                     </ion-card-content>
