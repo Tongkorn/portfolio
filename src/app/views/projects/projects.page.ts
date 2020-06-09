@@ -2,22 +2,21 @@ import { Component, OnInit } from '@angular/core';
 import { ModalController } from '@ionic/angular';
 import { ModalPage } from '../modal/modal.page'
 
-
 @Component({
   selector: 'app-projects',
   templateUrl: './projects.page.html',
   styleUrls: ['./projects.page.scss'],
 })
 export class ProjectsPage implements OnInit {
-  projectDemoValue: Number = 0;
+  projectDemoValue: String = null;
 
   constructor(public modalController: ModalController) { }
 
   ngOnInit() {
   }
 
-  async openModal(num: Number) {
-    this.projectDemoValue = num;
+  async openModal(projectId: String) {
+    this.projectDemoValue = projectId;
     this.modalController.create({
       component: ModalPage,
       cssClass: 'my-custom-modal-css',
@@ -38,7 +37,7 @@ export class ProjectsPage implements OnInit {
     } else if (projectName === 'retailAdmin') {
       linkName.href = "https://gitlab.com/tongkorn.p/retail-admin";
       linkName.click();
-    } else if (projectName === 'dorm') {
+    } else if (projectName === 'dorm'){
       linkName.href = "https://gitlab.com/passakornC/cc3_training";
       linkName.click();
     }
