@@ -32,9 +32,10 @@
 //
 
 .my-custom-modal-css .modal-wrapper {
-  height: 85%;
+  min-width: 100%;
+  min-height: 85%;
   top: 10%;
   position: absolute;
   display: block;
-  width: 70%;
+  
 }
